@@ -95,7 +95,7 @@ class LiveProvider(object):
 
         # Now retrieve the access token with the code
         access_url = flat_url(
-            'https://oauth.live.com/token',
+            'https://login.live.com/oauth20_token.srf',
             client_id=self.consumer_key,
             client_secret=self.consumer_secret,
             redirect_uri=request.route_url(self.callback_route),
